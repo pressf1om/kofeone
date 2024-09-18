@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 16px
+  }
+
+
+a {
+    text-decoration: none;
+}
+
+.obertka-k{
+    background: #06197a;
+    width: 100%;
+}
+
+.kontakt {
+    padding: 50px;
+
+}
+
+.kontakt h3 {
+    color: #fff;
+}
+
+
+.kontakt ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    width: 70%;
+}
+
+.kontakt ul li a {
+    color: #8ea9c8;
+}
+
+.form-zvonok{
+    text-align: right;
+    padding-right: 50px;
+    margin-top: -130px;
+    background: #011575;
+}
+
+.form-zvonok{
+    color: #99a5e4;
+}
+
+.form-zvonok input{
+    background: #fff;
+    border-color: #06197a;
+    border-radius: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    margin: 5px;
+    padding: 5px 2%;
+}
+
+.form-zvonok h3 {
+    margin-left: 100px;
+    margin: 3px;
+}
+
+.form-zvonok p{
+    text-align: center;
+}
+
+.form-zvonok button{
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
+    padding: 10px 15px;
+}
+
+.form-zvonok button:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}
+
