@@ -41,7 +41,7 @@ img {
     width: 100%;
     margin: 0;
 }
- 
+
  header{
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
@@ -54,9 +54,9 @@ img {
     display: block;
     top: 0;
     height: 55px;
-    z-index: 100; 
- 
- }  
+    z-index: 100;
+
+ }
 
  header .logo {
         font-family: "Roboto", sans-serif;
@@ -65,7 +65,7 @@ img {
         color: #fff;
         font-size: 22px;
 }
- 
+
  header nav{
     float: right;
     width: 40%;
@@ -159,7 +159,7 @@ header nav ul li:not(.btn) a:hover {
 }
 
 .us-text{
-    
+
     position: absolute;
     top: 55%;
     left: 50%;
@@ -200,7 +200,7 @@ header nav ul li:not(.btn) a:hover {
 
 .kontakt {
     padding: 50px;
-    
+
 }
 
 .kontakt h3 {
@@ -263,7 +263,4 @@ header nav ul li:not(.btn) a:hover {
 .form-zvonok button:hover{
     box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
 }
-
-
-
 
