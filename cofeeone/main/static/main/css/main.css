@@ -87,3 +87,80 @@ img {
     background-position: right center;
     padding: 17px 32px;
 }
+
+
+.dops{
+    margin-top: 500px;
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.dops img{
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+
+.dops .h{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+.dops .txt {
+    font-family: "Merriweather", serif;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    height: 90px;
+    width: 300px;
+}
+.menu{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.shop{
+    margin-top: 100px;
+    height: 450px;
+    margin: 30px 30px 100px 30px;
+}
+.block img{
+    border-radius: 7px;
+    height: 300px;
+    width: 250px;
+}
+
+.shop .see-all{
+    color: #fff;
+    background: #021daa;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.shop .see-all:hover{
+    transform: scale(1.1);
+}
+
+.shop .weapon{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+
+}
+
+.shop .weapon span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
