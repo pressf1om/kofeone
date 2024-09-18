@@ -27,4 +27,36 @@
 
 {% block body %}
 {% endblock %}
+
+{% block footer %}
+<div class="obertka-k">
+        <div class="kontakt">
+            <h3>Contacts</h3>
+            <br>
+            <ul>
+                <li><a href="#">Iceberg@gmail.ru</a></li>
+                <li><a href="https://www.instagram.com/realdonaldtrump/">Instagram</a></li>
+                <li><a href="https://twitter.com/realdonaldtrump">Twitter(X)</a></li>
+                <li><a href="#">+44 589 696 12 11</a></li>
+            </ul>
+        </div>
+    </div>
+            <div class = "form-zvonok" >
+                <div>
+                    <h3> Обратная связь</h3>
+                    <input type ='email' name = 'username' required placeholder="E-mail">
+                    <br>
+                    <input type='text' name='usernumber' required placeholder="Сообщение">
+                    <br>
+                    <!-- {% csrf_token %}
+                    {{ form.as_p }} -->
+                    <button>Отправить</button>
+                </div>
+                <br>
+                <p>© 2024 Iceberg Coffee Company. All rights reserved.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+{% endblock %}
 </html>
