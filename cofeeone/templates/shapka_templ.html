@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Coffee Iceberg</title>
+    <link rel="stylesheet" href="{% static 'css/shapka_templ.css' %}">
+</head>
+{% block header %}
+<body>
+<div class="obertka">
+        <header class="container">
+            <img src="{% static 'images/logo.svg'%}" width="1.5%">
+            <span class="logo">Iceberg Cofee</span>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'main' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="{% url 'recept' %}">Традиции</a></li>
+                    <li><a href="{% url 'order' %}">Заказать</a></li>
+                </ul>
+            </nav>
+        </header>
+</div>
+</body>
+{% endblock %}
+
+{% block body %}
+{% endblock %}
+</html>

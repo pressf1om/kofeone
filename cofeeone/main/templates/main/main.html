@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    {% load static %}
+{% extends 'shapka_templ.html' %}
+{% block head %}
+{% load static %}
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iceberg Cofee</title>
-    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% endblock %}
+{% block body %}
     <div class="obertka">
-        <header class="container">
-            <span class="logo">Iceberg Cofee</span>
-            <nav>
-                <ul>
-                    <li><a href="#sec1">Главная</a></li>
-                    <li><a href="#sec2">О нас</a></li>
-                    <li><a href="#sec3">Традиции</a></li>
-                    <li><a href="#section3">Заказать</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="hero container">
+      <div class="hero container">
             <div class="hero-inf">
                 <h1 id="sec1">Добро пожаловать в мир «Кофе Айсберг»!</h1>
                 <p>Погрузитесь в уникальное путешествие по ледяным просторам, где каждый глоток нашего кофе — это свежесть и чистота, словно кристально чистая вода айсберга. Мы гордимся тем, что предлагаем вам только лучшие сорта кофе, собранные с самых высоких плантаций мира.<p>
@@ -29,55 +15,5 @@
             </div>
             <img src="{% static 'main/images/lodka.jpg' %}">
         </div>
-        <div class="containerus">
-            <img src="{% static 'main/images/ice.jpg' %}" alt="" width="100%">
-            <div class="us-center">
-                <h2 id="sec2">О нас</h2>
-            </div>
-            <div class="us-text">
-                <P>Iceberg Coffee — ваш уникальный источник высококачественного кофе, который, как айсберг, скрывает под своей поверхностью множество разнообразных и удивительных вкусов. Мы стремимся создать не просто кафе, а целую кофейную культуру, где каждый глоток становится настоящим открытием.</P>
-                <br>
-                <p>Мы отбираем только лучшие зерна со всего мира — от солнечных плантаций Латинской Америки до экзотических уголков Африки и Азии. Каждая партия кофе проходит тщательную обработку и обжарку, чтобы раскрыть все богатство ароматов и вкусов.</p>
-                <br>
-                <p>Наша команда бариста готова помочь вам открыть новые грани кофейного удовольствия. Приходите и наслаждайтесь атмосферой, где каждый глоток — это открытие!</p>
-                <br>
-                <p>С любовью к кофе, Команда Iceberg Coffee</p>
-            </div>
-        </div>
-        <div class="trad">
-            <img src="{% static 'main/images/lukin.jpg' %}" width="36%">
-            <h1 id="sec3">Iceberg Cofee: Хранитель кофейных традиций</h1>
-
-            <p>Iceberg Cofee — это не просто кофе, а целая вселенная, в которой собраны лучшие традиции кофепития со всего мира. Скрывающий под собой множество тайн, этот уникальный кофе хранит в себе богатое наследие разнообразных рецептов и методов приготовления. Каждый глоток айсберг кофе отражает культуру и историю тех мест, откуда берутся его ингредиенты. Мы объединяем классические итальянские эспрессо, ароматный турецкий кофе и экзотические эфиопские церемонии, создавая уникальные сочетания, которые удивляют и радуют. В нашем репозитории рецептов вы найдете как традиционные варианты, так и современные интерпретации, которые позволят вам открыть новые грани любимого напитка.</p>
-
-        </div>
-
     </div>
-    <div class="obertka-k">
-        <div class="soc">
-            <h2 id="sec4">Контакты</h2>
-            <ul>
-                <li><a href="#">iceberg@cofee.ru</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">YouTube</a></li>
-                <li><a href="#">+89 589 697 78 11</a></li>
-            </ul>
-            <div class = "form-zvonok" >
-                    <div>
-                    <label>Имя<span></span></label>
-                     <br>
-                    <input type = 'text' name = 'username' required ></div >
-                <div>
-                    <label>Номер<span>*</span></label>
-                    <br>
-                    <input type='text' name='usernumber' required></div>
-                <div>
-                    <label>Сообщение</label>
-                    <br>
-                    <input type='text' name='question'>
-                    <!--Контакты доделаю-->
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+{% endblock %}

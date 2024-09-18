@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends 'shapka_templ.html' %}
+{% block head %}
     <title>Заказ онлайн</title>
-</head>
-<body>
-Order
-</body>
-</html>
+{% endblock %}
+
+{% block body %}
+<div style="margin-top: 100px">
+    <h2>Наш кофе</h2>
+    <div class="coffee-list">
+        {% for coffee in coffees %}
+            <div class="coffe-item">
+                <h3>{{ coffee.name }}</h3>
+                <p>{{ coffee.description }}</p>
+                <p><strong>Цена:</strong> {{ coffee.price }} rub </p>
+                <p><strong>Остаток:</strong> {{ coffee.quantity }} шт </p>
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+{% endblock %}
